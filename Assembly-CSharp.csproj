@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\BGSound.cs" />
      <Compile Include="Assets\Scripts\CAT.cs" />
      <Compile Include="Assets\Scripts\ForestGen.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\ballrobot.cs" />
      <Compile Include="Assets\Scripts\mous.cs" />
@@ -55,6 +56,7 @@
      <Compile Include="Assets\Scripts\raycastdemo.cs" />
      <Compile Include="Assets\Scripts\raycastpaint.cs" />
      <Compile Include="Assets\Scripts\spherebutton.cs" />
+     <Compile Include="Assets\Scripts\swww.cs" />
      <Compile Include="Assets\Scripts\uh.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -1,14 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\uh.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\mous.cs">
     <Files>
-      <File FileName="Assets\Scripts\mous.cs" Line="29" Column="39" />
+      <File FileName="Assets\Scripts\mous.cs" Line="8" Column="25" />
       <File FileName="Assets\Scripts\ForestGen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Movement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CAT.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CAT.cs" Line="27" Column="19" />
       <File FileName="Assets\Scripts\op.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\BGSound.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\uh.cs" Line="11" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

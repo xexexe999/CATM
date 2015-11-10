@@ -12,7 +12,7 @@ public class mous : MonoBehaviour {
 	}
 	
 	void FixedUpdate () {
-		
+		foreach (GameObject cat in GameManager.catList) {
 		Vector3 directionToCat = cat.transform.position - transform.position;
 		float angle = Vector3.Angle (directionToCat, transform.forward);  
 		
@@ -25,14 +25,19 @@ public class mous : MonoBehaviour {
 				
 				if (mouseRayHitInfo.collider.tag == "Cat") {
 					Mousee.AddForce (-directionToCat.normalized * 8000f);}
-				trt.Play();
-				trt.pitch = Random.Range(0.15f,1.75f);
-				trt.volume = Random.Range(0.45f,0.8f);
+					trt.Play ();
+					trt.pitch = Random.Range(0.15f,1.75f);
+					trt.volume = Random.Range(0.45f,0.8f);
 
 
 				}
 			}
 	
+		}}
+	void OnDestroy(){
+		GameManager.mouseList.Remove (this.gameObject);
 	}
+
+
 	}	
 

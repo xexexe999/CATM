@@ -9,7 +9,8 @@ public class CAT : MonoBehaviour {
 
 	
 	void FixedUpdate () {
-		
+		foreach (GameObject moew in GameManager.mouseList) {
+
 		Vector3 directionToMouse = moew.transform.position - transform.position;
 		float angle = Vector3.Angle (directionToMouse, transform.forward);  
 		
@@ -21,17 +22,23 @@ public class CAT : MonoBehaviour {
 				Debug.DrawRay (catRay.origin, catRay.direction, Color.red);
 				
 				if (catRayHitInfo.collider.tag == "Mouse") {
-					if (catRayHitInfo.distance < 3f) {
+					if (catRayHitInfo.distance < 4f) {
 						Destroy (moew.gameObject);
-						eat.Play ();
+							eat.Play ();
+
 					
 					} else {
 						cat.AddForce (directionToMouse.normalized * 3000f);
 					
-					}
+						}}
 				}
 			}
 		}
 	}	
+
+	void OnDestroy(){
+		GameManager.catList.Remove (this.gameObject);
+	}
+
 }
 
